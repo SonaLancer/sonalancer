@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@azure/msal-browser": "^2.16.1",
     "firebase": "^9.0.1",
     "next": "11.1.0",
     "react": "17.0.2",
