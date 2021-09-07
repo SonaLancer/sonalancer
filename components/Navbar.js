@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import img from 'next/img';
 
 export default function Navbar(){
     const{user,username} = {};
@@ -16,7 +17,18 @@ export default function Navbar(){
 
                 {username &&(
                     <>
-
+                        <li>
+                            <Link href="/admin">
+                                <button>
+                                    Write posts
+                                </button>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={'/${username}'}>
+                                <img src={user?.photoURL} />
+                            </Link>
+                        </li>
                     </>
                 )}
 
